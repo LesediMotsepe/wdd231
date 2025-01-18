@@ -1,19 +1,4 @@
 const courses = [
-    { id: 1, name: 'CSE 110', completed: true },
-    { id: 2, name: 'CSE 220', completed: false },
-    { id: 3, name: 'WDD 130', completed: true },
-    { id: 3, name: 'WDD 131', completed: true },
-    { id: 3, name: 'CSE 111', completed: true },
-    { id: 3, name: 'WDD 231', completed: false }
-  ];
-
-const courselist = document.getElementById('course-list');
-const navMenu = document.getElementById('nav-menu');
-const navToggle = document.getElementById('nav-toggle');
-
-function toggleNav() {
-  navMenu.classList.toggle('show');
-  navToggle.classList.toggle('active');const courses = [
     {
         subject: 'CSE',
         number: 110,
@@ -125,49 +110,3 @@ let place = "Johannesburg, South Africa";
 // backticks allow us to insert variables into the output.
 document.getElementById("copywrite").innerHTML = `\u00A9 ${yr} | ${author} | ${place}`;
 document.getElementById("modified").innerHTML = `Last Modified: ${lastModified}`;
-}
-
-courses.forEach((course) => {
-  const courseElement = document.createElement('div');
-  courseElement.textContent = course.name;
-  if (course.completed) {
-    courseElement.classList.add('completed');
-  }
-  courselist.appendChild(courseElement);
-});
-
-const filterButtons = document.getElementById('filter-buttons');
-const courseList = document.getElementById('course-list');
-
-filterButtons.addEventListener('click', (e) => {
-  if (e.target.tagName === 'BUTTON') {
-    const filterValue = e.target.textContent;
-    const filteredCourses = courses.filter((course) => {
-      if (filterValue === 'All') {
-        return true;
-      } else if (filterValue === 'Completed') {
-        return course.completed;
-      } else if (filterValue === 'Incomplete') {
-        return !course.completed;
-      }
-    });
-    courseList.innerHTML = '';
-    filteredCourses.forEach((course) => {
-      const courseElement = document.createElement('div');
-      courseElement.textContent = course.name;
-      if (course.completed) {
-        courseElement.classList.add('completed');
-      }
-      courseList.appendChild(courseElement);
-    });
-  }
-});
-const totalCreditsElement = document.getElementById('total-credits');
-const coursed = [
-  { id: 1, name: 'Course 1', credits: 3, completed: true },
-  { id: 2, name: 'Course 2', credits: 4, completed: false },
-  { id: 3, name: 'Course 3', credits: 5, completed: true },
-];
-
-const totalCredits = coursed.reduce((acc, course) => acc + course.credits, 0);
-totalCreditsElement.textContent = `Total credits: ${totalCredits}`;

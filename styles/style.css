@@ -1,32 +1,38 @@
-
-:root {
-  --primary-color: blue;
-  --secondary-color: orange;
-  --accent1-color: purple;
-  --accent2-color: yellow;
-  --heading-font: 'Anton', sans-serif;
-  --paragraph-font: 'Roboto', sans-serif;
-  --nav-background-color: grey;
-  --nav-link-color: red;
-  --nav-hover-link-color: green;
-  --nav-hover-background-color: white;
+:root{
+    --primary-color: #6f6af8;
+    --color-primary-light: hsl(242,91%,69%,18%);
+    --color-primary-variant: #5854c7;
+    --color-red:#da0f3f;
+    --secondary-color:#1A659E;
+    --premier-color: #FF6B35;
+    --color-first:red;
+    --mporipori-color: #333333;
+    --color-red-light: hsla(346, 87%, 37%, 15%);
+    --color-green: #00c476;
+    --color-green-light: hsl(156,100%,38%,15%);
+    --color-bg: #0f0f3e;
+    --color-gray-900: #1e1e66;
+    --color-gray-700: #2d2b7c;
+    --color-gray-300: rgba(242,242,254,0.3);
+    --color-gray-200: rgba(242,242,242,0.7);
+    --color-white:#f2f2fe;
+    --color-light: #055864;
+    --color-b: #f2f1ec;
 }
 
-* {
-  box-sizing: border-box;
-}
 
-header, main, footer {
-  max-width: 1200px;
-  margin: 0 auto;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
-
 body {
-  font-family: var(--paragraph-font);
-  margin: 0;
-  padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--color-b);
+    
 }
-
 header {
   display: flex;
   justify-content: center;
