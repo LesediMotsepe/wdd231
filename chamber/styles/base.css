@@ -1,0 +1,143 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Text color for readability */
+    background-color: #f9f9f9; /* Subtle background color */
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Align links to the center */
+    flex-wrap: wrap; /* Adjust for smaller screens */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Balanced spacing */
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #00bcd4; /* Add an accent color on hover */
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+}
+
+/* Directory Section */
+.directory {
+    text-align: center;
+}
+
+.directory h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+#member-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Member Card Styles */
+.member-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Smooth corners */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.member-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.member-card h2 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.member-card p {
+    margin: 10px 0;
+    color: #666;
+}
+
+/* List View Styles */
+.list-view {
+    display: block;
+}
+
+.list-view .member-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    text-align: left;
+}
+
+.list-view .member-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Circular images */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
