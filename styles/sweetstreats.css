@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #F5F5F5;
+    --secondary-color: #754975;
+    --accent-color: #FFC5C5;
+    }
+    
+        /* Typography */
+        body {
+            font-family: Open Sans, sans-serif;
+        }
+        
+        h1, h2, h3 {
+            font-weight: bold;
+        }
+        
+        h1 {
+            font-size: 48px;
+        }
+        
+        h2 {
+            font-size: 36px;
+        }
+        
+        h3 {
+            font-size: 24px;
+        }
+        
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }

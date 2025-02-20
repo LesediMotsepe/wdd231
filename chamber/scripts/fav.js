@@ -1,3 +1,13 @@
+let yr = new Date().getFullYear();
+let lastModified = document.lastModified;
+let author = "Lesedi Motsepe";
+let place = "Johannesburg, South Africa";
+
+// \u00A9 is the unicode for the copywrite symbol
+// backticks allow us to insert variables into the output.
+document.getElementById("copywrite").innerHTML = `\u00A9 ${yr} | ${author} | ${place}`;
+document.getElementById("modified").innerHTML = `Last Modified: ${lastModified}`;
+
 const memberList = document.getElementById('member-list');
 const gridViewButton = document.getElementById('grid-view-button');
 const listViewButton = document.getElementById('list-view-button');
@@ -100,5 +110,41 @@ closeButtons.forEach(button => {
         modal.style.display = 'none';
     });
 });
+
+const cardGrid = document.querySelector('.card-grid');
+const items = fetch('data/items.json')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(item => {
+      const card = document.createElement('div');
+      card.classList.add('card');
+      card.innerHTML = `
+        <h2>${item.name}</h2>
+        <figure>
+          <img src="images/${item.image}" alt="${item.name}">
+        </figure>
+        <address>${item.address}</address>
+        <p>${item.description}</p>
+        <button>Learn More</button>
+      `;
+      cardGrid.appendChild(card);
+    });
+  });
+  const visitDate = localStorage.getItem('visitDate');
+const currentDate = new Date();
+
+if (!visitDate) {
+  localStorage.setItem('visitDate', currentDate.getTime());
+  document.querySelector('.sidebar').innerHTML = 'Welcome! Let us know if you have any questions.';
+} else {
+  const timeDiff = currentDate.getTime() - visitDate;
+  const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+  if (daysDiff < 1) {
+    document.querySelector('.sidebar').innerHTML = 'Back so soon! Awesome!';
+  } else {
+    document.querySelector('.sidebar').innerHTML = `You last visited ${daysDiff} ${daysDiff === 1 ? 'day' : 'days'} ago.`;
+  }
+}
 
 
