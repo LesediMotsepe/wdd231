@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Alice Johnson",
+    "address": "123 Maple Street, Springfield, IL 62704",
+    "phone": "(217) 555-1234",
+    "website": "https://www.alicejohnsondesigns.com",
+    "image": "alice_johnson.png",
+    "membership_level": "Gold",
+    "email": "alice@emmachamber.com",
+    "join_date": "2022-03-15"
+  },
+  {
+    "name": "Bob Smith",
+    "address": "456 Oak Avenue, Madison, WI 53703",
+    "phone": "(608) 555-5678",
+    "website": "https://www.bobsmithconsulting.com",
+    "image": "bob_smith.png",
+    "membership_level": "Silver",
+    "email": "bob@emmachamber.com",
+    "join_date": "2021-08-01"
+  },
+  {
+    "name": "Carla Martinez",
+    "address": "789 Pine Road, Boulder, CO 80301",
+    "phone": "(303) 555-9012",
+    "website": "https://www.carlamartinezart.com",
+    "image": "carla_martinez.png",
+    "membership_level": "Platinum",
+    "email": "carla@emmachamber.com",
+    "join_date": "2023-01-20"
+  },
+  {
+    "name": "David Lee",
+    "address": "321 Birch Blvd, Seattle, WA 98101",
+    "phone": "(206) 555-3456",
+    "website": "https://www.davidleetech.com",
+    "image": "david_lee.png",
+    "membership_level": "Gold",
+    "email": "david@emmachamber.com",
+    "join_date": "2020-05-10"
+  },
+  {
+    "name": "Emily Chen",
+    "address": "654 Cedar Lane, Portland, OR 97209",
+    "phone": "(503) 555-7890",
+    "website": "https://www.emilychenwellness.com",
+    "image": "emily_chen.png",
+    "membership_level": "Silver",
+    "email": "emily@emmachamber.com",
+    "join_date": "2022-11-30"
+  },
+  {
+    "name": "Franklin Gomez",
+    "address": "987 Willow Way, Austin, TX 78701",
+    "phone": "(512) 555-2345",
+    "website": "https://www.franklingomezmedia.com",
+    "image": "franklin_gomez.png",
+    "membership_level": "Bronze",
+    "email": "franklin@emmachamber.com",
+    "join_date": "2019-07-22"
+  },
+  {
+    "name": "Grace Patel",
+    "address": "147 Elm Street, Ann Arbor, MI 48104",
+    "phone": "(734) 555-6789",
+    "website": "https://www.gracepatelmarketing.com",
+    "image": "grace_patel.png",
+    "membership_level": "Platinum",
+    "email": "grace@emmachamber.com",
+    "join_date": "2023-06-05"
+  }
+
+
+
+]
