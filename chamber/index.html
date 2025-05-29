@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="Emmarentia Chamber of Commerce">
-   <meta property="og:description" content="WDD 231 - Web Frontend Development,Lesedi Motsepe,Home page for the Emmarentia Chamber of Commerce" />
- <!--- <title>Emmarentia Chamber of Commerce</title>-->
+  <meta property="og:description" content="WDD 231 - Web Frontend Development, Lesedi Motsepe, Home page for the Emmarentia Chamber of Commerce" />
   <meta property="og:image" content="images/untitled design.png">
   <meta property="og:url" content="https://lesedimotsepe.github.io/wdd231/chamber">
   <meta property="og:type" content="website">
   <meta name="author" content="Lesedi Motsepe">
+  <title>Emmarentia Chamber of Commerce</title>
   <link rel="stylesheet" href="styles/style.css" />
-  <script src="scripts/script.js"></script>
+  <script defer src="scripts/script.js"></script>
 </head>
 <body>
 
@@ -28,13 +28,11 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
     <section class="hero">
       <img src="images/hero.png" alt="Chamber Community Image" />
       <a class="cta-button" href="join.html">Join the Chamber</a>
     </section>
 
-    <!-- Events Section -->
     <section class="events">
       <h2>Upcoming Events</h2>
       <ul>
@@ -43,24 +41,23 @@
       </ul>
     </section>
 
-    <!-- Weather Section -->
     <section class="weather">
       <h2>Current Weather</h2>
       <div id="weather-info">Loading weather...</div>
     </section>
 
-    <!-- Spotlight Section -->
     <section class="spotlights">
       <h2>Business Spotlights</h2>
       <div id="spotlight-container"></div>
     </section>
+
+    <section id="members"></section>
   </main>
 
-<footer class="footer">
+  <footer class="footer">
     <p id="copywrite"></p>
     <p id="modified"></p> 
-</footer>
+  </footer>
 
- 
 </body>
 </html>

@@ -1,29 +1,32 @@
-//document.getElementById('year').textContent = new Date().getFullYear();
+// Display Fake Weather
+function generateFakeWeather() {
+  const conditions = ["Sunny", "Cloudy", "Partly Cloudy", "Rainy", "Stormy"];
+  const currentTemp = Math.floor(Math.random() * 6) + 20; // 20°C–25°C
+  const condition = conditions[Math.floor(Math.random() * conditions.length)];
 
-/*/ Loading Weather from OpenWeatherMap API
-async function loadWeather() {
-  const apiKey = 'YOUR_API_KEY'; // Replace with your API key
-  const city = 'YourCity';
-  const response = await fetch(
-    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`
-  );
-  const data = await response.json();
+  const forecastDays = ["Thu", "Fri", "Sat"];
+  const forecast = forecastDays.map(day => {
+    const temp = Math.floor(Math.random() * 6) + 19; // 19°C–24°C
+    return `<li>${day}: ${temp}°C</li>`;
+  }).join("");
 
-  const current = data.list[0];
-  const weatherHTML = `
-    <p><strong>Now:</strong> ${current.main.temp}°C - ${current.weather[0].description}</p>
-    <ul>
-      ${[1, 9, 17].map(i => {
-        const day = new Date(data.list[i].dt_txt).toLocaleDateString('en-US', { weekday: 'short' });
-        return `<li>${day}: ${data.list[i].main.temp.toFixed(1)}°C</li>`;
-      }).join('')}
-    </ul>
+  const html = `
+    <p><strong>Now:</strong> ${currentTemp}°C - ${condition}</p>
+    <ul>${forecast}</ul>
   `;
-  document.getElementById('weather-info').innerHTML = weatherHTML;
+  document.getElementById('weather-info').innerHTML = html;
 }
-loadWeather();
 
-// Load Spotlights from members.json
+// Footer Info
+let yr = new Date().getFullYear();
+let lastModified = document.lastModified;
+let author = "Lesedi Motsepe";
+let place = "Johannesburg, South Africa";
+
+document.getElementById("copywrite").innerHTML = `\u00A9 ${yr} | ${author} | ${place}`;
+document.getElementById("modified").innerHTML = `Last Modified: ${lastModified}`;
+
+// Load Spotlights
 async function loadSpotlights() {
   const response = await fetch('members.json');
   const members = await response.json();
@@ -45,46 +48,37 @@ async function loadSpotlights() {
     container.appendChild(card);
   });
 }
-loadSpotlights();*/
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('scripts/members.json')
-    .then(response => {
-      if (!response.ok) throw new Error('Network response was not ok');
-      return response.json();
-    })
-    .then(members => {
-      const container = document.getElementById('members');
 
-      members.forEach(member => {
-        const card = document.createElement('div');
-        card.className = 'member-card';
+// Load Member Cards
+async function loadMembers() {
+  try {
+    const response = await fetch('scripts/members.json');
+    if (!response.ok) throw new Error("Failed to fetch members");
+    const members = await response.json();
+    const container = document.getElementById('members');
 
-        card.innerHTML = `
-          <img src="images/${member.image}" alt="${member.name}">
-          <h2>${member.name}</h2>
-          <p><strong>Membership:</strong> ${member.membership_level}</p>
-          <p><strong>Address:</strong> ${member.address}</p>
-          <p><strong>Phone:</strong> ${member.phone}</p>
-          <p><strong>Email:</strong> <a href="mailto:${member.email}">${member.email}</a></p>
-          <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
-          <p><strong>Joined:</strong> ${new Date(member.join_date).toLocaleDateString()}</p>
-        `;
-
-        container.appendChild(card);
-      });
-    })
-    .catch(error => {
-      console.error("Error loading or parsing members.json:", error);
+    members.forEach(member => {
+      const card = document.createElement('div');
+      card.className = 'member-card';
+      card.innerHTML = `
+        <img src="images/${member.image}" alt="${member.name}">
+        <h2>${member.name}</h2>
+        <p><strong>Membership:</strong> ${member.membership_level}</p>
+        <p><strong>Address:</strong> ${member.address}</p>
+        <p><strong>Phone:</strong> ${member.phone}</p>
+        <p><strong>Email:</strong> <a href="mailto:${member.email}">${member.email}</a></p>
+        <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+        <p><strong>Joined:</strong> ${new Date(member.join_date).toLocaleDateString()}</p>
+      `;
+      container.appendChild(card);
     });
+  } catch (error) {
+    console.error("Error loading members:", error);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  generateFakeWeather();
+  loadSpotlights();
+  loadMembers();
 });
-
-
-let yr = new Date().getFullYear();
-let lastModified = document.lastModified;
-let author = "Lesedi Motsepe";
-let place = "Johannesburg, South Africa";
-
-// \u00A9 is the unicode for the copywrite symbol
-// backticks allow us to insert variables into the output.
-document.getElementById("copywrite").innerHTML = `\u00A9 ${yr} | ${author} | ${place}`;
-document.getElementById("modified").innerHTML = `Last Modified: ${lastModified}`;
