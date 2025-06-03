@@ -7,7 +7,7 @@
         /* Typography */
         body {
             font-family: Poppins, sans-serif;
-            color:#4A2C2A,
+            color:#4A2C2A;
         }
         
         h1, h2, h3 {
@@ -29,4 +29,5 @@
         p {
             font-size: 16px;
             line-height: 24px;
+         
         }
