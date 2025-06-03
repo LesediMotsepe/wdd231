@@ -1,0 +1,36 @@
+{
+  "places": [
+    {
+      "name": "Botanical Gardens",
+      "address":"Emmarentia, Randburg, 2195
+    },
+    {
+      "name": "Emmarentia Dam",
+      "address": "Emmarentia, Randburg, 2195"
+    },
+    {
+      "name": "Emmarentia Animal Hospital",
+      "address": "252 Barry Hertzog Ave, Greenside, Randburg, 2193"
+    },
+    {
+      "name": "Checkers",
+      "address": "Cnr Barry Hertzog Ave and, Luzi Ln, Emmarentia, 2195"
+    },
+    {
+      "name": "Ocean Basket",
+      "address": "Shop 143, Barry Hertzog Ave, Emmarentia, Randburg, 2195"
+    },
+    {
+      "name": "Pizza Hut",
+      "address": "42 Greenhill Rd, Emmarentia, Randburg, 2195"
+    },
+    {
+      "name": "Kitchen of OZ",
+      "address": "103 Komatie St, Emmarentia, Randburg, 2195"
+    },
+    {
+      "name": "Emmarentia Library",
+      "address": "Barry Hertzog Ave, Emmarentia, Randburg, 2195"
+    }
+  ]
+}
