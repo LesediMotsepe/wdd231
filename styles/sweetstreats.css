@@ -4,10 +4,10 @@
     --accent-color: #FFF5E1;
     }
     
-        /* Typography */
+      
         body {
             font-family: Poppins, sans-serif;
-            color:#4A2C2A;
+            font-color:#4A2C2A;
         }
         
         h1, h2, h3 {
