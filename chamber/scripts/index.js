@@ -1,9 +1,9 @@
 // Improved JavaScript with OpenWeatherMap API
 
 async function loadRealWeather() {
-  const apiKey = 'YOUR_API_KEY_HERE'; // Replace with your actual API key
-  const city = 'Johannesburg'; // Or any desired city
-  const units = 'metric'; // Use 'imperial' for Fahrenheit
+  const apiKey = '10219efbd4a62c71add937c94fbe2b97'; 
+  const city = 'Johannesburg';
+  const units = 'metric'; 
 
   try {
     const response = await fetch(
