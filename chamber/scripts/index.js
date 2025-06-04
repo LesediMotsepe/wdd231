@@ -85,7 +85,7 @@ async function loadSpotlights() {
 
 async function loadMembers() {
   try {
-    const res = await fetch('members.json');
+    const res = await fetch('scripts/members.json');
     if (!res.ok) throw new Error("Failed to fetch member list");
 
     const members = await res.json();
