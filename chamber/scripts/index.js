@@ -1,6 +1,6 @@
 
 const API_KEY = '10219efbd4a62c71add937c94fbe2b97';
-const CITY = 'Johannesburg';
+const CITY = 'Emmarentia';
 const UNITS = 'metric';
 
 async function fetchWeather() {
