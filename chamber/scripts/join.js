@@ -1,4 +1,24 @@
- // Setting timestamp
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("joinForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = {
+      firstName: document.getElementById("firstName").value,
+      lastName: document.getElementById("lastName").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      business: document.getElementById("business").value,
+      date: new Date().toLocaleDateString()
+    };
+
+    localStorage.setItem("formData", JSON.stringify(formData));
+    window.location.href = "thankyou.html";
+  });
+});
+
+// Setting timestamp
     document.getElementById("timestamp").value = new Date().toISOString();
 
     // Modal
@@ -21,3 +41,4 @@
         e.target.style.display = "none";
       }
     });
+
