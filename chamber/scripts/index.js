@@ -54,14 +54,14 @@ async function loadSpotlights() {
       ['Gold', 'Silver'].includes(m.membership_level)
     );
 
-    // Shuffle and take 2–3 members
+  
     const count = Math.floor(Math.random() * 2) + 2; // Random 2 or 3
     const selected = goldSilver
       .sort(() => Math.random() - 0.5)
       .slice(0, count);
 
     const container = document.getElementById('spotlight-container');
-    container.innerHTML = ""; // Clear old spotlights
+    container.innerHTML = "";
 
     selected.forEach(member => {
       const div = document.createElement('div');
@@ -82,7 +82,7 @@ async function loadSpotlights() {
   }
 }
 
-// === Load Full Member List ===
+
 async function loadMembers() {
   try {
     const res = await fetch('members.json');
@@ -90,7 +90,7 @@ async function loadMembers() {
 
     const members = await res.json();
     const container = document.getElementById('members');
-    container.innerHTML = ""; // Clear old data
+    container.innerHTML = ""; 
 
     members.forEach(member => {
       const card = document.createElement('div');
@@ -113,7 +113,7 @@ async function loadMembers() {
   }
 }
 
-// === Footer Info ===
+
 function updateFooterInfo() {
   const year = new Date().getFullYear();
   const lastModified = document.lastModified;
@@ -124,7 +124,7 @@ function updateFooterInfo() {
   document.getElementById("modified").innerHTML = `Last Modified: ${lastModified}`;
 }
 
-// === DOM Ready ===
+
 document.addEventListener('DOMContentLoaded', () => {
   fetchWeather();
   loadSpotlights();
