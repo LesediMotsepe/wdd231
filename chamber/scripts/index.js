@@ -128,6 +128,5 @@ function updateFooterInfo() {
 document.addEventListener('DOMContentLoaded', () => {
   fetchWeather();
   loadSpotlights();
-  loadMembers();
   updateFooterInfo();
 });
