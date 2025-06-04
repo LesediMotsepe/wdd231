@@ -43,10 +43,10 @@ function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-// === Spotlights: Gold/Silver Random Selection ===
+//  Spotlights: Gold/Silver Random Selection 
 async function loadSpotlights() {
   try {
-    const res = await fetch('members.json');
+    const res = await fetch('scripts/members.json');
     if (!res.ok) throw new Error("Failed to load member data");
     const members = await res.json();
 
