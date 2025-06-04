@@ -1,4 +1,4 @@
-// Improved JavaScript with OpenWeatherMap API
+
 
 async function loadRealWeather() {
   const apiKey = '10219efbd4a62c71add937c94fbe2b97'; 
