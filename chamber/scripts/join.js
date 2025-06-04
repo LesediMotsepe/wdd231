@@ -1,7 +1,7 @@
- // Set timestamp
+ // Setting timestamp
     document.getElementById("timestamp").value = new Date().toISOString();
 
-    // Modal logic
+    // Modal
     document.querySelectorAll('[data-modal]').forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();
