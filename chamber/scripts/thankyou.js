@@ -1,13 +1,17 @@
-
 document.addEventListener("DOMContentLoaded", () => {
-  const data = JSON.parse(localStorage.getItem("formData"));
+  const params = new URLSearchParams(window.location.search);
 
-  if (data) {
-    document.getElementById("firstName").textContent = data.firstName;
-    document.getElementById("lastName").textContent = data.lastName;
-    document.getElementById("email").textContent = data.email;
-    document.getElementById("phone").textContent = data.phone;
-    document.getElementById("business").textContent = data.business;
-    document.getElementById("date").textContent = data.date;
-  }
+  const firstName = params.get("firstName");
+  const lastName = params.get("lastName");
+  const email = params.get("email");
+  const phone = params.get("phone");
+  const organization = params.get("organization");
+  const timestamp = params.get("timestamp");
+
+  document.getElementById("firstName").textContent = firstName || "N/A";
+  document.getElementById("lastName").textContent = lastName || "N/A";
+  document.getElementById("email").textContent = email || "N/A";
+  document.getElementById("phone").textContent = phone || "N/A";
+  document.getElementById("organization").textContent = organization || "N/A";
+  document.getElementById("timestamp").textContent = timestamp || new Date().toLocaleDateString();
 });
