@@ -173,4 +173,24 @@ section {
   gap: 1rem;
 }
 
-label {
+@media (max-width: 768px) {
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-button {
+    position: static;
+    display: block;
+    margin: 10px auto;
+    transform: none;
+  }
+
+  .hero {
+    text-align: center;
+  }
+}
+
