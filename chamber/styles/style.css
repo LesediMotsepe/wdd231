@@ -31,8 +31,12 @@ nav a {
   text-decoration: none;
 }
 nav ul li a:hover{
-  color: #0077cc;
+  color: #ffcc00;
 
+}
+nav .active {
+  border-bottom: 3px solid #ffcc00;
+  color: #ffcc00;
 }
 
 .hero {
