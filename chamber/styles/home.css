@@ -55,7 +55,7 @@ nav .active {
 .hero img {
   width: 90rem;
   height: 50rem;
-  display: block;
+  //*display: block;*/
 }
 
 .cta-button {
