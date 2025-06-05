@@ -53,8 +53,8 @@ nav .active {
 }
 
 .hero img {
-  width: 98rem;
-  height: 50rem;
+  width: 70%;
+  height: 50%;
   display: block;
 }
 
@@ -192,5 +192,10 @@ section {
   .hero {
     text-align: center;
   }
+  .hero img {
+  width: 25%;
+  height: 15%;
+  display: block;
+}
 }
 
