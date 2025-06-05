@@ -1,0 +1,95 @@
+/* styles/discover.css */
+
+.discover-grid {
+  display: grid;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight";
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+@media (min-width: 700px) {
+  .discover-grid {
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six"
+      "seven eight";
+  }
+}
+
+@media (min-width: 1024px) {
+  .discover-grid {
+    grid-template-areas:
+      "one two three"
+      "four five six"
+      "seven eight eight";
+  }
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  color: #004080;
+}
+
+.card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.card a {
+  margin-top: auto;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Grid area assignment (8 cards max) */
+#place-cards .card:nth-child(1) { grid-area: one; }
+#place-cards .card:nth-child(2) { grid-area: two; }
+#place-cards .card:nth-child(3) { grid-area: three; }
+#place-cards .card:nth-child(4) { grid-area: four; }
+#place-cards .card:nth-child(5) { grid-area: five; }
+#place-cards .card:nth-child(6) { grid-area: six; }
+#place-cards .card:nth-child(7) { grid-area: seven; }
+#place-cards .card:nth-child(8) { grid-area: eight; }
+
+/* Hide hover transform on mobile */
+@media (max-width: 699px) {
+  .card:hover {
+    transform: none;
+  }
+}
