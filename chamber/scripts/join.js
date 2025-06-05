@@ -41,4 +41,14 @@ document.addEventListener("DOMContentLoaded", () => {
         e.target.style.display = "none";
       }
     });
+document.addEventListener("DOMContentLoaded", () => {
+  const timestampField = document.getElementById("timestamp");
+  const today = new Date();
+  timestampField.value = today.toLocaleDateString("en-ZA", {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  });
+});
+
 
