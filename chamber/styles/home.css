@@ -181,7 +181,7 @@ section {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 300px) {
   .cta-button {
     position: static;
     display: block;
@@ -195,7 +195,7 @@ section {
   .hero img {
   width: 100%;
   height: auto;
-  display: block;
+  /*display: block;*/
 }
 }
 
