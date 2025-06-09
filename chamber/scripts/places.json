@@ -2,13 +2,13 @@
   "places": [
     {
       "name": "Botanical Gardens",
-      "address":"Greenside, Randburg, 2195"
-      "description":"Founded in 1969, the Johannesburg Botanical Gardens can be located on 81-hectares of large, grassy, open spaces overlooking the 7,5-hectare Emmarentia Dam"
+      "address":"Greenside, Randburg, 2195",
+      "description":"Founded in 1969, the Johannesburg Botanical Gardens can be located on 81-hectares of large, grassy, open spaces overlooking the 7,5-hectare Emmarentia Dam",
     },
     {
       "name": "Emmarentia Dam",
-      "address": "Emmarentia, Randburg, 2195"
-       "description":"The length of the dam is about 400 metres (1,310 ft) with a maximum depth of 6.7 metres (22 ft) and a water surface of 8.8 hectares (22 acres)"
+      "address": "Emmarentia, Randburg, 2195",
+       "description":"The length of the dam is about 400 metres (1,310 ft) with a maximum depth of 6.7 metres (22 ft) and a water surface of 8.8 hectares (22 acres)",
     },
     {
       "name": "Greenside Animal Hospital",
