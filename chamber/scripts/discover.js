@@ -1,7 +1,7 @@
 // scripts/discover.js
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("data/places.json")
+  fetch("scripts/places.json")
     .then((res) => res.json())
     .then((data) => {
       const grid = document.getElementById("place-cards");
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.classList.add("card");
 
         const img = document.createElement("img");
-        img.src = `images/place${index + 1}.webp`;
+        img.src = `images${index + 1}.webp`;
         img.alt = `${place.name}`;
         img.loading = "lazy";
 
