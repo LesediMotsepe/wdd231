@@ -1,49 +1,49 @@
 {
   "places": [
     {
-      "image": "botanical_gaderns.webp"
+      "image": "botanical_gaderns.webp",
       "name": "Botanical Gardens",
       "address":"Greenside, Randburg, 2195",
       "description":"Founded in 1969, the Johannesburg Botanical Gardens can be located on 81-hectares of large, grassy, open spaces overlooking the 7,5-hectare Emmarentia Dam"
     },
     {
-      "image": "emmarentia_dam.webp"
+      "image": "emmarentia_dam.webp",
       "name": "Emmarentia Dam",
       "address": "Emmarentia, Randburg, 2195",
        "description":"The length of the dam is about 400 metres (1,310 ft) with a maximum depth of 6.7 metres (22 ft) and a water surface of 8.8 hectares (22 acres)"
     },
     {
-      "image": "greenside_animal_hospital.webp"
+      "image": "greenside_animal_hospital.webp",
       "name": "Greenside Animal Hospital",
       "address": "252 Barry Hertzog Ave, Greenside, Randburg, 2193",
        "description":"Greenside Animal Hospital is the prominent veterinary practice on the corner of Barry Hertzog Avenue and Muirfield Road in Greenside, Johannesburg"
     },
     {
-      "image": "checkers.webp"
+      "image": "checkers.webp",
       "name": "Checkers",
       "address": "Cnr Barry Hertzog Ave and, Luzi Ln, Emmarentia, 2195",
        "description":"At Checkers Emmarentia we offer a Primo Gelato counter, deli,meat market,Kosher wine and cheese world with fresh produce for your convenience!"
     },
     { 
-      "image": "ocean_basket.webp"
+      "image": "ocean_basket.webp",
       "name": "Ocean Basket",
       "address": "Shop 143, Barry Hertzog Ave, Emmarentia, Randburg, 2195",
        "description":"Ocean Basket seafood restaurants give you the best of the Mediterranean lifestyle, with generous portions of quality seafood for you and your family"
     },
     {
-      "image": "pizza_hut.webp"
+      "image": "pizza_hut.webp",
       "name": "Pizza Hut",
       "address": "42 Greenhill Rd, Emmarentia, Randburg, 2195",
        "description":"Almost 1 Metre of Pizza fun with the iconic Big Boss Pizza. Choose any 3 pizza flavours to make up your Big Boss Pizza!"
     },
     {
-      "image": "kitchen_of_oz.webp"
+      "image": "kitchen_of_oz.webp",
       "name": "Kitchen of OZ",
       "address": "103 Komatie St, Emmarentia, Randburg, 2195",
        "description":"At The Kitchen of OZ you will discover unexpected twists to your favourite classic foods. Every dish blends traditional family recipes with an urban adventure."
     },
     {
-      "image": "emmarentia_library.webp"
+      "image": "emmarentia_library.webp",
       "name": "Emmarentia Library",
       "address": "Barry Hertzog Ave, Emmarentia, Randburg, 2195",
        "description":"Our aim as a library is to see constant improvement and continuous change in our community and a general adoption of a learning and prosporous local community"
