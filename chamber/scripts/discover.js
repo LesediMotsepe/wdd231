@@ -9,9 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
       data.places.forEach((place, index) => {
         const card = document.createElement("div");
         card.classList.add("card");
+         /*<img src="images/${member.image}" alt="${member.name}">
+         img.src = `images/${index + 1}.webp`;*/
 
         const img = document.createElement("img");
-        img.src = `images/${index + 1}.webp`;
+        img.src = `images/${place.image}`;
         img.alt = `${place.name}`;
         img.loading = "lazy";
 
