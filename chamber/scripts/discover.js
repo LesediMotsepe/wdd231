@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.classList.add("card");
 
         const img = document.createElement("img");
-        img.src = `images${index + 1}.webp`;
+        img.src = `images/${index + 1}.webp`;
         img.alt = `${place.name}`;
         img.loading = "lazy";
 
