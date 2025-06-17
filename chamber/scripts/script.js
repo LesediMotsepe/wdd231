@@ -1,21 +1,5 @@
-// Display Fake Weather
-function generateFakeWeather() {
-  const conditions = ["Sunny", "Cloudy", "Partly Cloudy", "Rainy", "Stormy"];
-  const currentTemp = Math.floor(Math.random() * 6) + 20; // 20°C–25°C
-  const condition = conditions[Math.floor(Math.random() * conditions.length)];
 
-  const forecastDays = ["Thu", "Fri", "Sat"];
-  const forecast = forecastDays.map(day => {
-    const temp = Math.floor(Math.random() * 6) + 19; // 19°C–24°C
-    return `<li>${day}: ${temp}°C</li>`;
-  }).join("");
 
-  const html = `
-    <p><strong>Now:</strong> ${currentTemp}°C - ${condition}</p>
-    <ul>${forecast}</ul>
-  `;
-  document.getElementById('weather-info').innerHTML = html;
-}
 
 // Footer Info
 let yr = new Date().getFullYear();
@@ -78,7 +62,7 @@ async function loadMembers() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  generateFakeWeather();
+ 
   loadSpotlights();
   loadMembers();
 });
