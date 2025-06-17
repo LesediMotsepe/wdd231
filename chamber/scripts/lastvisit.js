@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const visitMsg = document.getElementById("visit-message");
-  const lastVisit = localStorage.getItem("lastVisit");
+  const lastVisit = localStorage.getItem("lastvisit");
 
   const now = Date.now();
 
