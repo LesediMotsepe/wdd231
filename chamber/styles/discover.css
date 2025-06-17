@@ -3,9 +3,8 @@
 .discover-grid {
   display: grid;
   grid-template-areas:
-    "one"
-    "two"
-    "three"
+    "one one one"
+    "two three three";
     "four"
     "five"
     "six"
