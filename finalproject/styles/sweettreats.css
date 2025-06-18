@@ -1,0 +1,85 @@
+:root {
+  --primary: #F78DA7;
+  --secondary: #B388EB;
+  --background: #FFF5E1;
+  --text: #4A2C2A;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+header {
+  background-color: var(--primary);
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--secondary);
+  color: white;
+}
+
+.btn, .btn-secondary {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: white;
+  color: var(--secondary);
+}
+
+.btn-secondary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.highlights, .featured, .callout {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.featured img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary);
+  color: white;
+}
