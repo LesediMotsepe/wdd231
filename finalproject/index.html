@@ -2,7 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Treats | Home</title>
+  <link rel="stylesheet" href="styles/sweetstreats.css" />
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Sweet Treats</h1>
+    <nav>
+      <button id="menu-toggle">☰ Menu</button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="catering.html">Catering</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Deliciously Crafted Desserts</h2>
+        <p>Indulge in our handmade treats made with love and joy.</p>
+        <a href="menu.html" class="cta-button">Explore Our Menu</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <h2>Why Choose Sweet Treats?</h2>
+      <ul>
+        <li>Fresh, handmade desserts every day</li>
+        <li>Perfect for birthdays, weddings, and events</li>
+        <li> Fast and reliable delivery</li>
+      </ul>
+    </section>
+
+    <!-- Spotlight Section -->
+    <section class="spotlight">
+      <h2>Customer Favorites</h2>
+      <div class="treats-grid" id="treats-container">
+        <!-- Treats loaded by JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Sweet Treats. All rights reserved.</p>
+    <p id="modified"></p>
+  </footer>
+</body>
+</html>
+
   <title>Sweet Treats | Home</title>
   <link rel="stylesheet" href="styles/sweetstreats.css" />
   <script type="module" src="scripts/main.js" defer></script>
