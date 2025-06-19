@@ -1,6 +1,3 @@
-
-
-
 <section class="contact-section">
   <h2>Get in Touch</h2>
   <p>We'd love to hear from you! Reach out with questions, comments, or sweet requests.</p>
@@ -8,33 +5,39 @@
   <div class="contact-info">
     <div>
       <h3>Visit Us</h3>
-      <p>123 Dessert Lane<br>Bakerville, BT 45678</p>
+      <p>
+        123 Dessert Lane<br>
+        Bakerville, BT 45678
+      </p>
     </div>
     <div>
       <h3>Call or Email</h3>
-      <p> (123) 456-7890<br>info@sweettreats.com</p>
+      <p>📞 (123) 456-7890<br>📧 <a href="mailto:info@sweettreats.com">info@sweettreats.com</a></p>
     </div>
     <div>
       <h3>Hours</h3>
-      <p>Mon – Sat: 9am – 7pm<br>Sun: Closed</p>
+      <p>
+        Mon – Sat: 9am – 7pm<br>
+        Sun: Closed
+      </p>
     </div>
   </div>
 
   <h3>Send Us a Message</h3>
-  <form class="contact-form">
-    <label>
+  <form class="contact-form" name="contact" method="POST" data-netlify="true">
+    <label for="name">
       Full Name:
-      <input type="text" name="name" required />
+      <input type="text" id="name" name="name" required />
     </label>
 
-    <label>
+    <label for="email">
       Email:
-      <input type="email" name="email" required />
+      <input type="email" id="email" name="email" required />
     </label>
 
-    <label>
+    <label for="message">
       Message:
-      <textarea name="message" rows="4" required></textarea>
+      <textarea id="message" name="message" rows="4" required></textarea>
     </label>
 
     <button type="submit">Send Message</button>
