@@ -1,5 +1,6 @@
 import { loadTreats } from './modules/treats.js';
 
+// Set footer dates
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("modified").textContent = "Last modified: " + document.lastModified;
 
@@ -9,16 +10,19 @@ const nav = document.querySelector('nav ul');
 menuBtn.addEventListener('click', () => {
   nav.classList.toggle('open');
 });
+
+// Load and display treats
 const container = document.getElementById('treats-container');
 
 loadTreats().then(data => {
-  // Limit to 4 treats 
-  const favorites = data.slice(0, 4);
-
-const container = document.getElementById('treats-container');
-loadTreats().then(data => {
+  // Save full data in localStorage
   localStorage.setItem('treats', JSON.stringify(data));
-  container.innerHTML = data.map(treat => `
+
+  // Limit to 4 treats (Customer Favorites)
+  const favorites = data.slice(0, 4); // Or filter by data.filter(t => t.favorite)
+
+  // Display 4 favorite treats
+  container.innerHTML = favorites.map(treat => `
     <div class="treat-card">
       <img src="${treat.image}" alt="${treat.name}" />
       <h4>${treat.name}</h4>
