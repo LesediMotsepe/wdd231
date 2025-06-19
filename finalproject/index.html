@@ -2,11 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sweet Treats | Home</title>
   <link rel="stylesheet" href="styles/sweetstreats.css" />
   <script type="module" src="scripts/main.js" defer></script>
@@ -15,9 +11,9 @@
   <header>
     <h1>Sweet Treats</h1>
     <nav>
-      <button id="menu-toggle">☰ Menu</button>
+      <button id="menu-toggle" aria-label="Toggle Menu">☰ Menu</button>
       <ul id="menu">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="order.html">Order</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -41,7 +37,7 @@
       <ul>
         <li>Fresh, handmade desserts every day</li>
         <li>Perfect for birthdays, weddings, and events</li>
-        <li> Fast and reliable delivery</li>
+        <li>Fast and reliable delivery</li>
       </ul>
     </section>
 
@@ -49,7 +45,7 @@
     <section class="spotlight">
       <h2>Customer Favorites</h2>
       <div class="treats-grid" id="treats-container">
-        
+        <!-- Cards will be loaded by JavaScript -->
       </div>
     </section>
   </main>
@@ -60,5 +56,3 @@
   </footer>
 </body>
 </html>
-
-  
