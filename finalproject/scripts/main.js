@@ -9,7 +9,11 @@ const nav = document.querySelector('nav ul');
 menuBtn.addEventListener('click', () => {
   nav.classList.toggle('open');
 });
+const container = document.getElementById('treats-container');
 
+loadTreats().then(data => {
+  // Limit to 4 treats 
+  const favorites = data.slice(0, 4);
 
 const container = document.getElementById('treats-container');
 loadTreats().then(data => {
