@@ -178,6 +178,70 @@ button:hover {
 .order-form button:hover {
   background-color: #e56a8a;
 }
+.contact-section {
+  padding: 2rem;
+  background-color: #FFF5E1;
+  color: #4A2C2A;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info div {
+  flex: 1 1 250px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  background-color: #F78DA7;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e66e8e;
+}
+
+@media (max-width: 600px) {
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
+
 
 @media (max-width: 600px) {
   .order-form {
