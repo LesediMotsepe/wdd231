@@ -1,6 +1,5 @@
 import { loadTreats } from './modules/treats.js';
-
-// Update footer year and last modified date
+import { loadmenu } from './modules/treats.js';
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("modified").textContent = "Last modified: " + document.lastModified;
 
@@ -11,7 +10,7 @@ menuBtn.addEventListener('click', () => {
   nav.classList.toggle('open');
 });
 
-// Load treats and render them into the menu
+
 const container = document.getElementById('treats-container');
 loadTreats().then(data => {
   localStorage.setItem('treats', JSON.stringify(data));
