@@ -1,4 +1,4 @@
-import { loadTreats } from './modules/treats.js';
+import { loadTreats } from 'modules/treats.js';
 
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("modified").textContent = "Last modified: " + document.lastModified;
