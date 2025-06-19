@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sweet Treats | Order</title>
+  <link rel="stylesheet" href="styles/sweetstreats.css" />
+</head>
+<body>
+  <header>
+    <h1>Sweet Treats</h1>
+    <nav>
+      <button id="menu-toggle">☰ Menu</button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="order-section">
+      <h2>Place Your Order</h2>
+      <form action="thankyou.html" method="get" class="order-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required autocomplete="name" />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required autocomplete="email" />
+
+        <label for="treat">Select Your Treat:</label>
+        <select id="treat" name="treat" required>
+          <option value="">--Choose a Treat--</option>
+          <option value="Strawberry Shortcake">Strawberry Shortcake - $4.99</option>
+          <option value="Chocolate Fudge">Chocolate Fudge - $5.49</option>
+          <option value="Vanilla Delight">Vanilla Delight - $4.79</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1" required />
+
+        <label for="notes">Additional Notes:</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Any special instructions?"></textarea>
+
+        <button type="submit">Submit Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sweet Treats. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+      document.getElementById("menu").classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
