@@ -1,14 +1,17 @@
 import { loadTreats } from './modules/treats.js';
 
+// Update footer year and last modified date
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("modified").textContent = "Last modified: " + document.lastModified;
 
+// Hamburger menu toggle
 const menuBtn = document.getElementById('menu-toggle');
 const nav = document.querySelector('nav ul');
 menuBtn.addEventListener('click', () => {
   nav.classList.toggle('open');
 });
 
+// Load treats and render them into the menu
 const container = document.getElementById('treats-container');
 loadTreats().then(data => {
   localStorage.setItem('treats', JSON.stringify(data));
@@ -22,6 +25,7 @@ loadTreats().then(data => {
   `).join('');
 });
 
+// Modal open/close
 window.openModal = (name, flavor, price) => {
   const modal = document.getElementById("modal");
   modal.querySelector(".modal-content").innerHTML = `
