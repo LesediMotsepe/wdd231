@@ -8,7 +8,7 @@ export async function loadTreats() {
     return [];
   }
 }
-export async function loadTreats() {
+export async function loadmenu() {
   return [
     {
       name: "Strawberry Cheesecake",
